@@ -99,3 +99,39 @@ footer { background: var(--color-text); color: white; padding: 2rem; margin-top:
 @media (min-width: 1280px) { .practice-container { max-width: 1280px; } }
 
 img { max-width: 100%; }
+
+.btn { padding: 10px 20px; border-radius: 6px; font-family: var(--font-body); font-size: var(--font-base); cursor: pointer; transition: all 0.3s ease; border: 2px solid transparent; text-decoration: none; display: inline-block; }
+.btn-primary { background: var(--color-primary); color: white; border-color: var(--color-primary); }
+.btn-primary:hover { background: var(--color-primary-dark); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(37,99,235,0.3); }
+.btn-secondary { background: transparent; color: var(--color-primary); border-color: var(--color-primary); }
+.btn-secondary:hover { background: var(--color-primary); color: white; }
+.btn-danger { background: #ef4444; color: white; border-color: #ef4444; }
+.btn-danger:hover { background: #dc2626; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(239,68,68,0.3); }
+.btn-disabled, .btn:disabled { background: #cbd5e1; color: #64748b; border-color: #cbd5e1; cursor: not-allowed; opacity: 0.6; }
+.btn-disabled:hover { transform: none; box-shadow: none; }
+
+.card-component { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease; max-width: 350px; }
+.card-component:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+.card-component img { width: 100%; height: 200px; object-fit: cover; }
+.card-component .card-content { padding: 20px; }
+.card-component .tags { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+.card-component .tag { background: var(--color-primary-light); color: var(--color-primary); padding: 4px 10px; border-radius: 20px; font-size: var(--font-xs); }
+
+.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(30,41,59,0.7), rgba(30,41,59,0.7)), url('https://placehold.co/1200x800') center/cover; color: white; padding: 2rem; }
+.hero h1 { font-size: var(--font-4xl); color: white; margin-bottom: 1rem; }
+.hero p { font-size: var(--font-xl); margin-bottom: 2rem; color: #e2e8f0; max-width: 600px; }
+@media (max-width: 600px) { .hero h1 { font-size: var(--font-3xl); } .hero p { font-size: var(--font-base); } }
+
+.contact-form { max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.contact-form .form-group { margin-bottom: 1.5rem; }
+.contact-form label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: var(--font-sm); }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px 16px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: var(--font-body); font-size: var(--font-base); transition: all 0.3s ease; }
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-light); }
+.contact-form input:invalid, .contact-form textarea:invalid { border-color: #ef4444; }
+.contact-form input:invalid:focus { box-shadow: 0 0 0 3px #fee2e2; }
+
+.footer-social { display: flex; gap: 12px; margin-top: 1rem; }
+.footer-social a { width: 36px; height: 36px; background: #334155; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease; }
+.footer-social a:hover { background: var(--color-primary); transform: translateY(-2px); }
+
+.button-demo { display: flex; gap: 15px; flex-wrap: wrap; margin: 1.5rem 0; }
