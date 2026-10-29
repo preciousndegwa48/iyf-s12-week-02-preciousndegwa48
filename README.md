@@ -3,10 +3,11 @@
 ## Author
 - **Name:** Precious Ndegwa
 - **GitHub:** [@preciousndegwa48](https://github.com/preciousndegwa48)
+- **Location:** Nairobi, Kenya
 - **Date:** October 28, 2026
 
 ## Project Description
-Portfolio website built for IYF Week 2 assignment focusing on CSS fundamentals - Reset, Box Model, Typography System, Color Scheme, Flexbox, Grid, and Mobile-first Responsive Design. Includes box model exercises and polished interactive effects.
+Portfolio website built for IYF Week 2 assignment focusing on CSS fundamentals - Reset, Box Model, Typography System, Color Scheme, Flexbox, Grid, and Mobile-first Responsive Design. Includes box model exercises, daily challenges, and polished interactive effects.
 
 ## Technologies Used
 - HTML5
@@ -24,6 +25,7 @@ Portfolio website built for IYF Week 2 assignment focusing on CSS fundamentals -
 - Grid Gallery (3 columns), Magazine Layout with grid areas, Projects Grid responsive
 - Mobile-first responsive design (320px, 768px, 1024px, 1280px, 1440px)
 - Polish effects - hover transform, box-shadow, transitions, focus states
+- Daily Challenges: Day 1 Button Styles, Day 2 Card Component, Day 3 Hero Section Nairobi, Day 4 Contact Form, Day 5 Footer
 
 ## How to Run
 1. Clone this repository: `git clone https://github.com/preciousndegwa48/iyf-s12-week-02-preciousndegwa48.git`
@@ -45,6 +47,8 @@ Portfolio website built for IYF Week 2 assignment focusing on CSS fundamentals -
 
 ## Screenshots (optional)
 ![Portfolio Screenshot](https://placehold.co/800x400?text=Portfolio+Week+2)
+- Flexbox Froggy Completed ✅
+- CSS Grid Garden Completed ✅
 
-## Live Demo (if deployed)
+## Live Demo 
 [View Live Demo](https://preciousndegwa48.github.io/iyf-s12-week-02-preciousndegwa48/)
