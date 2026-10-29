@@ -4,99 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model Practice - Precious Ndegwa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .practice-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-      }
-        .box-demo {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 1rem 0;
-        }
-        .demo-box {
-            width: 150px;
-            height: 100px;
-            background-color: #bfdbfe;
-            padding: 20px;
-            border: 5px solid #2563eb;
-            margin: 15px;
-            text-align: center;
-        }
-        .broken-box {
-            width: 300px;
-            padding: 20px;
-            border: none;
-            background: #fecaca;
-        }
-        .fixed-box {
-            width: 300px;
-            padding: 20px;
-            border: none;
-            background: #bbf7d0;
-            box-sizing: border-box;
-        }
-        .card {
-            width: 300px;
-            padding: 20px;
-            border: 1px solid gray;
-            background: white;
-            border-radius: 8px;
-            box-sizing: border-box;
-        }
-        .card img {
-            width: calc(100% + 40px);
-            margin: -20px -20px 0 -20px;
-            border-radius: 8px 8px 0 0;
-            display: block;
-        }
-        .card h3 {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        .card button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <div class="practice-container">
-        <h1>Task 3.2: Box Model Mastery</h1>
+<header>
+    <nav>
+        <div class="nav-logo">Precious</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="box-model-practice.html"><strong>Box Model</strong></a></li>
+        </ul>
+    </nav>
+</header>
 
-        <h2>Exercise 1: Visualization</h2>
-        <div class="box-demo">
-            <div class="demo-box">Content + Padding + Border + Margin</div>
-            <div class="demo-box">Each box has all 4</div>
-        </div>
-        <p><strong>Blue inside</strong> = Content, <strong>Light blue around</strong> = Padding, <strong>Dark blue line</strong> = Border, <strong>Space outside</strong> = Margin</p>
+<main class="practice-container">
+    <h1>Task 3.2: Box Model Mastery</h1>
 
-        <h2>Exercise 2: Debug Layout</h2>
-        <h3>Broken (340px wide):</h3>
-        <div class="broken-box">I am 300px + 20px padding * 2 = 340px total!</div>
-        <br>
-        <h3>Fixed (300px wide):</h3>
-        <div class="fixed-box">I am exactly 300px total with box-sizing: border-box;</div>
-        <p><strong>Answer:</strong> Without border-box, padding adds to width. With border-box, padding is included inside width.</p>
-
-        <h2>Exercise 3: Card Component (300px total)</h2>
-        <div class="card">
-            <img src="https://placehold.co/300x180?text=Project+Image" alt="Project">
-            <h3>My Project Title</h3>
-            <p>A short description of my project. This card is exactly 300px wide total.</p>
-            <button>View Project</button>
-        </div>
+    <h2>Exercise 1: Visualization - Content, Padding, Border, Margin</h2>
+    <div class="box-demo">
+        <div class="demo-box">Content Area - Blue<br>Padding - Light Blue<br>Border - Dark Blue<br>Margin - Space outside</div>
+        <div class="demo-box">Second Box - Shows gap from margin</div>
+        <div class="demo-box">Third Box</div>
+        <div class="demo-box">Fourth Box</div>
     </div>
+    <p><strong>Explanation:</strong> Content (text), Padding (space inside border), Border (line), Margin (space outside - 15px)</p>
+
+    <h2>Exercise 2: Debug Layout - Fix 340px issue</h2>
+    <h3>Broken Box (340px wide):</h3>
+    <div class="broken-box">Width 300px + Padding 20px*2 = 340px total! This overflows.</div>
+    <br>
+    <h3>Fixed Box (300px total):</h3>
+    <div class="fixed-box">Width 300px includes padding with box-sizing: border-box. Exact 300px!</div>
+    <p><strong>Fix:</strong> Added <code>box-sizing: border-box;</code> to include padding in width.</p>
+
+    <h2>Exercise 3: Card Component (Exact 300px)</h2>
+    <div class="card">
+        <img src="https://placehold.co/300x180" alt="Project">
+        <h3>Project Title - 15px margin-bottom</h3>
+        <p>Description text - card width 300px total with 20px padding and 1px border.</p>
+        <button>View Project</button>
+    </div>
+    <p><strong>Specs:</strong> Card width: 300px total, Padding: 20px, Border: 1px solid gray, Title margin-bottom: 15px, Image full width</p>
+</main>
+
+<footer>
+    <div class="footer-copyright"><p>&copy; 2026 Precious Ndegwa</p></div>
+</footer>
 </body>
 </html>
