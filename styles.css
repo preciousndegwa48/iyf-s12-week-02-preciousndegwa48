@@ -4,51 +4,93 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #1e293b;
-    background-color: #ffffff;
+:root {
+    --font-xs: 0.75rem;    
+    --font-sm: 0.875rem;   
+    --font-base: 1rem;     
+    --font-lg: 1.125rem;   
+    --font-xl: 1.25rem;    
+    --font-2xl: 1.5rem;    
+    --font-3xl: 1.875rem;  
+    --font-4xl: 2.25rem;
+
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --color-primary: #2563eb;        
+    --color-secondary: #7c3aed;      
+    --color-background: #f8fafc;     
+    --color-text: #1e293b;           
+    --color-muted: #64748b;          
+
+    --color-primary-light: #dbeafe;
+    --color-primary-dark: #1d4ed8;
 }
 
-p {
-    color: #334155;
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    color: var(--color-text);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-4xl);
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 2rem; 
+    font-size: var(--font-3xl);
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-2xl);
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+h4 { font-size: var(--font-xl); font-weight: 600; margin-bottom: 0.5rem; }
+h5 { font-size: var(--font-lg); font-weight: 600; margin-bottom: 0.5rem; }
+h6 { font-size: var(--font-base); font-weight: 600; margin-bottom: 0.5rem; }
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
 }
 
-h5 {
-    font-size: 1.125rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+small {
+    font-size: var(--font-sm);
+    color: var(--color-muted);
 }
 
-h6 {
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
+button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: var(--font-base);
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.muted {
+    color: var(--color-muted);
 }
