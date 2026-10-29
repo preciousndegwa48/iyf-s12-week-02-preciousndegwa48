@@ -3,68 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precious Ndegwa - Home</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <title>Precious Ndegwa - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <header>
+<header>
     <nav>
         <div class="nav-logo">Precious</div>
         <ul>
-            <li><a href="index.html" aria-current="page"><strong>Home</strong></a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li><a href="box-model-practice.html">Box Model</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-    <main>
-        <section>
-            <h1>Precious Ndegwa</h1>
-            <p><strong>Web Developer | IYF Student | Based in Nairobi, KE</strong></p>
-            <img src="https://placehold.co/600x400?text=Precious+Ndegwa" alt="Portrait placeholder for Precious Ndegwa" width="300">
-        </section>
+<main class="practice-container">
+    <section>
+        <h1>Precious Ndegwa</h1>
+        <p>Web Developer | IYF Student | Based in Nairobi, Kenya</p>
+    </section>
 
-        <section>
-            <h2>Welcome</h2>
-            <p>Hello! I am a passionate web development student learning HTML and building accessible, semantic websites. I enjoy exploring new technologies and creating simple, beautiful websites.</p>
-            <p><a href="about.html">Learn more about me</a> | <a href="projects.html">View my projects</a></p>
-        </section>
+    <section>
+        <h2>Task 4.1: Card Row (Flexbox)</h2>
+        <div class="card-row">
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 1"><h3>Project 1</h3><p>Description</p><button>View</button></div>
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 2"><h3>Project 2</h3><p>Description</p><button>View</button></div>
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 3"><h3>Project 3</h3><p>Description</p><button>View</button></div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Quick Links</h2>
-            <ul>
-                <li>My favorite resource: <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
-                <li>Email: <a href="mailto:preciousndegwa48@gmail.com">preciousndegwa48@gmail.com</a></li>
-            </ul>
-        </section>
-    </main>
+    <section>
+        <h2>Task 4.2: Photo Gallery (Grid 3-col)</h2>
+        <div class="gallery">
+            <img src="https://placehold.co/300x200" alt="1"><img src="https://placehold.co/300x200" alt="2"><img src="https://placehold.co/300x200" alt="3">
+            <img src="https://placehold.co/300x200" alt="4"><img src="https://placehold.co/300x200" alt="5"><img src="https://placehold.co/300x200" alt="6">
+        </div>
+    </section>
 
-        <footer>
+    <section>
+        <h2>Task 4.2: Magazine Layout (Grid Areas)</h2>
+        <div class="magazine">
+            <div class="magazine-header">Header - spans full width</div>
+            <div class="magazine-sidebar">Sidebar</div>
+            <div class="magazine-main">Main Content</div>
+            <div class="magazine-footer">Footer - spans full width</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects Grid (1-col mobile, 2-col tablet, 3-col desktop)</h2>
+        <div class="projects-grid">
+            <div class="card"><h3>Project A</h3><p>Desc</p></div>
+            <div class="card"><h3>Project B</h3><p>Desc</p></div>
+            <div class="card"><h3>Project C</h3><p>Desc</p></div>
+        </div>
+    </section>
+    
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card-row">
+    <form style="flex:1;">
+      <input type="text" placeholder="Name" style="width:100%; padding:10px; margin-bottom:10px;">
+      <input type="email" placeholder="Email" style="width:100%; padding:10px; margin-bottom:10px;">
+      <textarea placeholder="Message" style="width:100%; padding:10px; height:100px;"></textarea>
+      <button style="margin-top:10px;">Send Message</button>
+    </form>
+    <div style="flex:1; background:white; padding:1rem; border-radius:8px;">
+      <h4>Sidebar Info</h4>
+      <p>Nairobi, Kenya</p>
+      <p>preciousndegwa48@gmail.com</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
     <div class="footer-columns">
-        <div>
-            <h4>About</h4>
-            <p>Web developer based in Nairobi,learning accessibility.</p>
-        </div>
-        <div>
-            <h4>Links</h4>
-            <ul style="list-style:none; padding:0;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>preciousndegwa48@gmail.com</p>
-        </div>
+        <div><h4>About</h4><p>Web developer based in Nairobi, Kenya.</p></div>
+        <div><h4>Links</h4><a href="index.html">Home</a><br><a href="box-model-practice.html">Box Model</a></div>
+        <div><h4>Contact</h4><p>preciousndegwa48@gmail.com</p></div>
     </div>
-    <div class="footer-copyright">
-        <p>&copy; 2026 Precious Ndegwa</p>
-    </div>
+    <div class="footer-copyright"><p>&copy; 2026 Precious Ndegwa</p></div>
 </footer>
 </body>
 </html>
