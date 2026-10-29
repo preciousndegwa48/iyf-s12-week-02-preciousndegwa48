@@ -22,6 +22,14 @@
     </nav>
 </header>
 
+<section class="hero">
+    <div>
+        <h1>Hi, I'm Precious Ndegwa</h1>
+        <p>Web Developer from Nairobi, Kenya - Building beautiful responsive portfolios with HTML, CSS & Grid</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+</section>
+
 <main class="practice-container">
     <section>
         <h1>Precious Ndegwa</h1>
@@ -29,11 +37,46 @@
     </section>
 
     <section>
+        <h2>Day 1: Button Styles</h2>
+        <p>4 different button styles with hover states</p>
+        <div class="button-demo">
+            <button class="btn btn-primary">Primary (solid)</button>
+            <button class="btn btn-secondary">Secondary (outline)</button>
+            <button class="btn btn-danger">Danger (red)</button>
+            <button class="btn btn-disabled" disabled>Disabled</button>
+        </div>
+    </section>
+
+    <section>
         <h2>Task 4.1: Card Row (Flexbox)</h2>
         <div class="card-row">
-            <div class="card"><img src="https://placehold.co/300x180" alt="Project 1"><h3>Project 1</h3><p>Description</p><button>View</button></div>
-            <div class="card"><img src="https://placehold.co/300x180" alt="Project 2"><h3>Project 2</h3><p>Description</p><button>View</button></div>
-            <div class="card"><img src="https://placehold.co/300x180" alt="Project 3"><h3>Project 3</h3><p>Description</p><button>View</button></div>
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 1"><h3>Project 1</h3><p>Description - Nairobi</p><button>View</button></div>
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 2"><h3>Project 2</h3><p>Description - Nairobi</p><button>View</button></div>
+            <div class="card"><img src="https://placehold.co/300x180" alt="Project 3"><h3>Project 3</h3><p>Description - Nairobi</p><button>View</button></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Day 2: Reusable Card Component</h2>
+        <div class="card-row">
+            <div class="card-component">
+                <img src="https://placehold.co/350x200" alt="Project">
+                <div class="card-content">
+                    <h3>Portfolio Card</h3>
+                    <p>Reusable card with image, tags and CTA - Nairobi</p>
+                    <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Grid</span></div>
+                    <button class="btn btn-primary">View Project</button>
+                </div>
+            </div>
+            <div class="card-component">
+                <img src="https://placehold.co/350x200" alt="Project">
+                <div class="card-content">
+                    <h3>Nairobi Project</h3>
+                    <p>Responsive design built for Week 2</p>
+                    <div class="tags"><span class="tag">Flexbox</span><span class="tag">Responsive</span></div>
+                    <button class="btn btn-primary">View Project</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -49,8 +92,8 @@
         <h2>Task 4.2: Magazine Layout (Grid Areas)</h2>
         <div class="magazine">
             <div class="magazine-header">Header - spans full width</div>
-            <div class="magazine-sidebar">Sidebar</div>
-            <div class="magazine-main">Main Content</div>
+            <div class="magazine-sidebar">Sidebar - Nairobi, Kenya</div>
+            <div class="magazine-main">Main Content - Responsive Grid</div>
             <div class="magazine-footer">Footer - spans full width</div>
         </div>
     </section>
@@ -58,37 +101,48 @@
     <section id="projects">
         <h2>Projects Grid (1-col mobile, 2-col tablet, 3-col desktop)</h2>
         <div class="projects-grid">
-            <div class="card"><h3>Project A</h3><p>Desc</p></div>
-            <div class="card"><h3>Project B</h3><p>Desc</p></div>
-            <div class="card"><h3>Project C</h3><p>Desc</p></div>
+            <div class="card"><h3>Project A</h3><p>Desc - Nairobi</p></div>
+            <div class="card"><h3>Project B</h3><p>Desc - Nairobi</p></div>
+            <div class="card"><h3>Project C</h3><p>Desc - Nairobi</p></div>
         </div>
     </section>
     
     <section id="contact">
-  <h2>Contact Me</h2>
-  <div class="card-row">
-    <form style="flex:1;">
-      <input type="text" placeholder="Name" style="width:100%; padding:10px; margin-bottom:10px;">
-      <input type="email" placeholder="Email" style="width:100%; padding:10px; margin-bottom:10px;">
-      <textarea placeholder="Message" style="width:100%; padding:10px; height:100px;"></textarea>
-      <button style="margin-top:10px;">Send Message</button>
-    </form>
-    <div style="flex:1; background:white; padding:1rem; border-radius:8px;">
-      <h4>Sidebar Info</h4>
-      <p>Nairobi, Kenya</p>
-      <p>preciousndegwa48@gmail.com</p>
-    </div>
-  </div>
-</section>
+        <h2>Day 4: Contact Form - Styled</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Precious Ndegwa - Nairobi, Kenya" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="precious@nairobi.ke" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Hello from Nairobi..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+        </form>
+    </section>
 </main>
 
 <footer>
     <div class="footer-columns">
         <div><h4>About</h4><p>Web developer based in Nairobi, Kenya.</p></div>
-        <div><h4>Links</h4><a href="index.html">Home</a><br><a href="box-model-practice.html">Box Model</a></div>
-        <div><h4>Contact</h4><p>preciousndegwa48@gmail.com</p></div>
+        <div><h4>Links</h4><a href="index.html">Home</a><br><a href="box-model-practice.html">Box Model</a><br><a href="#projects">Projects</a></div>
+        <div><h4>Contact</h4><p>preciousndegwa48@gmail.com</p><p>Nairobi, Kenya</p></div>
+        <div>
+            <h4>Connect</h4>
+            <div class="footer-social">
+                <a href="#">📧</a>
+                <a href="#">🐙</a>
+                <a href="#">💼</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
     </div>
-    <div class="footer-copyright"><p>&copy; 2026 Precious Ndegwa</p></div>
+    <div class="footer-copyright"><p>&copy; 2026 Precious Ndegwa - Nairobi, Kenya</p></div>
 </footer>
 </body>
 </html>
